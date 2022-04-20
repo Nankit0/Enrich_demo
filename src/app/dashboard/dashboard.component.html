@@ -1,0 +1,160 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 d-flex justify-content-center mt-3">
+            <div class="col-4">
+
+
+                <nav>
+                    <div class="nav nav-tabs d-flex justify-content-between" id="nav-tab" role="tablist">
+                        <a class="nav-link active navLinks" id="nav-dashboard-tab" data-toggle="tab"
+                            href="#nav-dashboard" role="tab" aria-controls="nav-home" aria-selected="true">Dashboard</a>
+
+                        <a class="nav-link navLinks" id="nav-fleet-tab" data-toggle="tab" href="#nav-fleet" role="tab"
+                            aria-controls="nav-profile" aria-selected="false">Fleet</a>
+
+                        <a class="nav-link navLinks" id="nav-trips-tab" data-toggle="tab" href="#nav-trips" role="tab"
+                            aria-controls="nav-contact" aria-selected="false">Trips</a>
+
+                        <a class="nav-link navLinks" id="nav-alarms-tab" data-toggle="tab" href="#nav-alarms" role="tab"
+                            aria-controls="nav-contact" aria-selected="false">Alarms</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+
+            <div class="col-10">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-dashboard" role="tabpanel"
+                        aria-labelledby="nav-dashboard-tab">
+                        <h3>
+                            Monitor
+                        </h3>
+
+                        <div class="container-fluid my-5">
+                            <div class="row justify-content-center">
+                                <div class="col-2">
+                                    <div class="card">
+
+                                        <div class="col-12 d-flex justify-content-end">
+                                            <i class="fa fa-address-book-o fa-3x" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col-12">
+                                            Registration
+                                            <h2>{{monitorData.registration}}</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="card">
+
+                                        <div class="col-12 d-flex justify-content-end">
+                                            <i class="fa fa-globe fa-3x" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col-12">
+                                            Online
+                                            <h2>{{monitorData.online}}</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="card">
+
+                                        <div class="col-12 d-flex justify-content-end">
+                                            <i class="fa fa-truck fa-3x" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col-12">
+                                            Moving
+                                            <h2>{{monitorData.moving}}</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="card">
+
+                                        <div class="col-12 d-flex justify-content-end">
+                                            <i class="fa fa-hourglass-o fa-3x" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col-12">
+                                            Idle
+                                            <h2>{{monitorData.idle}}</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="card">
+
+                                        <div class="col-12 d-flex justify-content-end">
+                                            <i class="fa fa-globe fa-3x" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col-12">
+                                            Offline
+                                            <h2>{{monitorData.offline}}</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-4">
+                            <h3 class=" d-inline">Map</h3>
+
+                            
+                            <span>
+                                
+                                
+                                <input class="searchTab pl-3" type="search" placeholder="Search by vehicle No."
+                                aria-label="Search">
+                                <span id="searchIcon" style="border-radius: 50%;color: #fff; background-color: #000;">
+                                    
+                                    <i class="fa fa-search fa-1x" aria-hidden="true"></i>
+                                </span>
+                            </span>
+                        
+                            <div class="ml-4">
+
+                                <div id="circleStyle"></div>
+                                <select name="" id="" class="" >
+                                    <option value="Connected">Connected</option>
+                                </select>
+
+                            </div>
+                            <span>
+                                
+                                
+                                <input class="searchTab font-weight-bold pl-3 text-danger bg-white" type="search" value="Filter" disabled
+                                aria-label="Search">
+                                
+                                <i class="fa fa-sliders fa-rotate-270"></i>
+                                
+                                
+                            </span>
+
+                           
+                                <i class="fa fa-angle-left text-secondary fa-3x"></i>
+                            
+                          
+                                <i class="fa fa-angle-right text-danger fa-3x"></i>
+                            
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="col-12 mt-4 p-3 Map">
+
+                        <agm-map [latitude]="lat" [longitude]="lng">
+                            <agm-marker [latitude]="lat" [longitude]="lng" ></agm-marker>
+                        </agm-map>
+                    </div>
+                </div>
+
+
+                <!-- <div class="tab-pane fade" id="nav-fleet" role="tabpanel" aria-labelledby="nav-fleet-tab">
+                </div>
+                <div class="tab-pane fade" id="nav-trips" role="tabpanel" aria-labelledby="nav-trips-tab">3
+                </div>
+                <div class="tab-pane fade" id="nav-alarms" role="tabpanel" aria-labelledby="nav-alarms-tab">4
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>

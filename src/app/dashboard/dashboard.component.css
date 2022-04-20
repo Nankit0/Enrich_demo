@@ -1,0 +1,93 @@
+#nav-tab{
+    border-radius: 24px;
+    /* border: 1px solid black; */
+    box-shadow: 3px 3px 3px #dbd8d8;
+}
+.nav-link.active, .nav-link:hover{
+    border: none;
+    background-color: red;
+    color: #fff;
+    border-radius: 24px;
+}
+.nav-link{
+    border: none;
+    color: #000;
+}
+.navLinks{
+    width: 114px;
+    text-align: center;
+}
+.card{
+    padding: 14px;
+    border-radius: 14px;
+    box-shadow: 3px 3px 3px #dbd8d8;
+    border: none;
+}
+.card:hover{
+    color: #fff;
+    background-color: red;
+}
+.searchTab{
+    width: 216px;
+    height: 38px;
+    border-radius: 14px;
+    border: none;
+    box-shadow: 3px 3px 3px #dbd8d8;
+    margin-left: 29px;
+}
+div#nav-dashboard span #searchIcon {
+    position: absolute;
+    top: 28.6%;
+    right: 68.5%;
+    width: 3%;
+    height: 3%;
+}
+agm-map {
+    height: 600px;
+}
+.Map{
+    border-radius: 14px;
+    border: none;
+    box-shadow: 3px 3px 3px 3px #dbd8d8;
+    padding-left:21px
+}
+
+
+div#nav-dashboard span span i.fa-search.fa-1x {
+    margin-left: 10px;
+    font-size: 21px;
+    margin-top: 6px;
+}
+select{
+    width: 216px;
+    height: 38px;
+    border-radius: 14px;
+    border: none;
+    box-shadow: 3px 3px 3px #dbd8d8;
+    padding-left:24px
+}
+#circleStyle{
+    height: 15px;
+    width: 15px;
+    background-color: green;
+    top: 289px;
+    left: 504px;
+    border-radius: 50%;
+    position: absolute;
+}
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+.fa-sliders{
+    position: absolute;
+    right: 19%;
+    top: 288px;
+    color: red;
+}
